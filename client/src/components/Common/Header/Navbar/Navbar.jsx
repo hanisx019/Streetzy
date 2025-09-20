@@ -1,8 +1,30 @@
 import React from 'react'
+import { BsPerson } from "react-icons/bs";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { LuSearch } from "react-icons/lu";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <>
+      <div className='flex justify-around items-center p-2 select-none cursor-pointer'>
+        <h2 className='text-2xl font-extrabold  tracking-widest hover:text-shadow-black'><Link to="/" >Streetzy</Link></h2>
+        <div className='hidden md:flex gap-5 text-[10px] md:text-sm font-semibold tracking-wide '>
+          <Link to="#"><p className='hover:text-gray-500 transition-all'>MEN</p></Link>
+          <Link to="#"><p className='hover:text-gray-500 transition-all'>WOMEN</p></Link>
+          <Link to="#"><p className='hover:text-gray-500 transition-all'>TOP WEAR</p></Link>
+          <Link to="#"><p className='hover:text-gray-500 transition-all'>BOTTOM WEAR</p></Link>
+        </div>
+        <div className='flex gap-4 justify-center items-center'>
+          <p className='hover:text-gray-500 transition-all'><Link to="#"><BsPerson className='size-5'/></Link></p>
+          <button className='hover:text-gray-500 transition-all relative'>
+            <Link to="#"><HiOutlineShoppingBag className='size-5'/></Link>
+            <span className='bg-red-600 rounded-full absolute size-4 text-white text-[10px] -mt-6'>4</span>
+          </button>
+          <p className='hover:text-gray-500 transition-all'><Link to="#"><LuSearch className='size-5'/></Link></p>
+        </div>
+      </div>
+    </>
   )
 }
 
