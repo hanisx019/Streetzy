@@ -1,13 +1,14 @@
 import React from 'react'
 import { BsPerson } from "react-icons/bs";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
-import { LuSearch } from "react-icons/lu";
+import { HiBars3BottomRight, HiOutlineShoppingBag } from "react-icons/hi2";
+
 import { Link } from 'react-router-dom';
+import SearchBar from '../Searchbar/SearchBar';
 
 const Navbar = () => {
   return (
     <>
-      <div className='flex justify-around items-center p-2 select-none cursor-pointer'>
+      <div className='flex justify-between px-[20px] md:px-[50px] lg:px-[100px] items-center p-2 select-none cursor-pointer'>
         <h2 className='text-2xl font-extrabold  tracking-widest hover:text-shadow-black'><Link to="/" >Streetzy</Link></h2>
         <div className='hidden md:flex gap-5 text-[10px] md:text-sm font-semibold tracking-wide '>
           <Link to="#"><p className='hover:text-gray-500 transition-all'>MEN</p></Link>
@@ -21,7 +22,10 @@ const Navbar = () => {
             <Link to="#"><HiOutlineShoppingBag className='size-5'/></Link>
             <span className='bg-red-600 rounded-full absolute size-4 text-white text-[10px] -mt-6'>4</span>
           </button>
-          <p className='hover:text-gray-500 transition-all'><Link to="#"><LuSearch className='size-5'/></Link></p>
+          <SearchBar/>
+          <button className='md:hidden'>
+            <HiBars3BottomRight className='size-5'/>
+          </button>
         </div>
       </div>
     </>

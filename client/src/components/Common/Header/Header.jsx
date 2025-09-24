@@ -9,6 +9,7 @@ const Header = () => {
         <Topbar/>
         {/*Navbar*/}
         <Navbar/>
+        <hr className='mt-2 text-gray-200 '/>
     </div>
   )
 }
