@@ -1,9 +1,18 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
+/* Hide scrollbar only for Cartbar scroll area */
+.cartbar-scroll-area {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.cartbar-scroll-area::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 #root {
   font-family: "Outfit", sans-serif;
-
 }
 
 .Tzfont{
