@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BsPerson } from "react-icons/bs";
 import { HiBars3BottomRight, HiOutlineShoppingBag } from "react-icons/hi2";
 
 import { Link } from 'react-router-dom';
 import SearchBar from '../Searchbar/SearchBar';
+import Cartbar from '../Cartbar/Cartbar';
 
 const Navbar = () => {
+  const [openCartbar,setOpenCartBar] = useState(false);
+
   return (
     <>
       <div className='flex justify-between px-[20px] md:px-[50px] lg:px-[100px] items-center p-2 select-none cursor-pointer'>
@@ -18,16 +21,18 @@ const Navbar = () => {
         </div>
         <div className='flex gap-4 justify-center items-center'>
           <p className='hover:text-gray-500 transition-all'><Link to="#"><BsPerson className='size-5'/></Link></p>
-          <button className='hover:text-gray-500 transition-all relative'>
-            <Link to="#"><HiOutlineShoppingBag className='size-5'/></Link>
+          <button onClick={()=>setOpenCartBar(true)} className='hover:text-gray-500 transition-all relative'>
+            <Link to="#"><HiOutlineShoppingBag   className='size-5'/></Link>
             <span className='bg-red-600 rounded-full absolute size-4 text-white text-[10px] -mt-6'>4</span>
           </button>
           <SearchBar/>
           <button className='md:hidden'>
             <HiBars3BottomRight className='size-5'/>
           </button>
+
         </div>
       </div>
+      <Cartbar openCartbar={openCartbar} setOpenCartBar={setOpenCartBar} />
     </>
   )
 }
