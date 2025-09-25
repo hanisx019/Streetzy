@@ -82,8 +82,8 @@ const CartProducts = () => {
                 </div>
                 <div className='flex gap-3 text-gray-600 text-[10px] md:text-[14px] items-center'>
                   <span className="flex items-center">
-                    <span className="w-[60px]">Size :<span> {products.size}</span></span>
-                    <span className="h-4 border-r-2   -ml-4  -mr-1  md:-ml-1 md:-mr-1  border-gray-400 "></span>
+                    <span className="w-[60px] text-nowrap">Size :<span> {products.size}</span></span>
+                    <span className="h-4 border-r-2   -ml-4  -mr-1  md:ml-1 md:-mr-1  border-gray-400 "></span>
                   </span>
                   <span className='text-nowrap'>Color : <span>{products.color}</span></span>
                 </div>

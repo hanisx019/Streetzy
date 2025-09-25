@@ -5,10 +5,11 @@ import { HiBars3BottomRight, HiOutlineShoppingBag } from "react-icons/hi2";
 import { Link } from 'react-router-dom';
 import SearchBar from '../Searchbar/SearchBar';
 import Cartbar from '../Cartbar/Cartbar';
+import MobileMenuBar from '../MobileMenubar/MobileMenuBar';
 
 const Navbar = () => {
   const [openCartbar,setOpenCartBar] = useState(false);
-
+  const [openMenuBar,setOpenMenuBar] = useState(false);
   return (
     <>
       <div className='flex justify-between px-[20px] md:px-[50px] lg:px-[100px] items-center p-2 select-none cursor-pointer'>
@@ -26,10 +27,10 @@ const Navbar = () => {
             <span className='bg-red-600 rounded-full absolute size-4 text-white text-[10px] -mt-6'>4</span>
           </button>
           <SearchBar/>
-          <button className='md:hidden'>
+          <button  onClick={()=>setOpenMenuBar(true)} className='md:hidden -ml-[5px]'>
             <HiBars3BottomRight className='size-5'/>
           </button>
-
+          <MobileMenuBar openMenuBar={openMenuBar} setOpenMenuBar={setOpenMenuBar}/>
         </div>
       </div>
       <Cartbar openCartbar={openCartbar} setOpenCartBar={setOpenCartBar} />
