@@ -4,7 +4,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <div>
-      <div className='text-center'>
+      <div className='text-center '>
         <h3 className='text-sm md:1ext-[14.5px] pt-3 md:pt-2 font-semibold -mb-[3px] tracking-wide'>New Styles On Sale: Up To 40% Off</h3>
         <a href="#" className='text-[10px] md:text-xs underline font-semibold'>Shop All Our New Markdowns</a>
       </div>

@@ -12,13 +12,45 @@ const Navbar = () => {
   const [openMenuBar,setOpenMenuBar] = useState(false);
   return (
     <>
-      <div className='flex justify-between px-[20px] md:px-[50px] lg:px-[100px] items-center p-2 select-none cursor-pointer'>
+      <div className='flex justify-between px-[20px] md:px-[50px] lg:px-[100px] items-center p-2 select-none '>
         <h2 className='text-2xl font-extrabold  tracking-widest hover:text-shadow-black'><Link to="/" >Streetzy</Link></h2>
-        <div className='hidden md:flex gap-5 text-[10px] md:text-sm font-semibold tracking-wide '>
-          <Link to="#"><p className='hover:text-gray-500 transition-all'>MEN</p></Link>
+        <div className='hidden md:flex items-center  gap-5 text-[10px] md:text-sm font-semibold tracking-wide peer'>
+          <Link to="#"><p className='hover:text-gray-500 transition-all peer'>MEN</p></Link>
           <Link to="#"><p className='hover:text-gray-500 transition-all'>WOMEN</p></Link>
           <Link to="#"><p className='hover:text-gray-500 transition-all'>TOP WEAR</p></Link>
           <Link to="#"><p className='hover:text-gray-500 transition-all'>BOTTOM WEAR</p></Link>
+        </div>
+        <div className='w-full bg-white h-[250px] absolute top-28 left-0 z-50 opacity-0 -translate-y-2 transition-all duration-150 peer-hover:opacity-100 peer-hover:translate-y-3  '>
+          <div className='flex justify-items-center justify-center mt-4 gap-10'>
+              <div className='leading-8'>
+                <h2 className='text-[16px] font-semibold'>Featured</h2>
+                <p className='text-[13px] font-semibold text-neutral-600'>New Upcoming Drops</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>New Arrivals</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Best Sellers</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Cutomize</p>
+              </div>
+              <div className='leading-8'>
+                <h2 className='text-[16px] font-semibold'>Trending</h2>
+                <p className='text-[13px] font-semibold text-neutral-600'>Summer</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Lifestyle</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Yoga</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Gym Training</p>
+              </div>
+              <div className='leading-8'>
+                <h2 className='text-[16px] font-semibold'>Clothing</h2>
+                <p className='text-[13px] font-semibold text-neutral-600'>All Clothing</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Performance Essentials</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Tops and T-shirts</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Shorts</p>
+              </div>
+              <div className='leading-8'>
+                <h2 className='text-[16px] font-semibold'>Sales and Offer's</h2>
+                <p className='text-[13px] font-semibold text-neutral-600'>Shop All Sales</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Best Seller</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Last Chances</p>
+                <p className='text-[13px] font-semibold text-neutral-600'>Clothing</p>
+              </div>
+          </div>
         </div>
         <div className='flex gap-4 justify-center items-center'>
           <p className='hover:text-gray-500 transition-all'><Link to="#"><BsPerson className='size-5'/></Link></p>
