@@ -1,4 +1,5 @@
 import React from 'react'
+import { Analytics } from "@vercel/analytics/react";
 import { Route, Routes } from 'react-router-dom'
 import UserLayout from './components/Layout/UserLayout'
 import HomePage from './components/Main/pages/HomePage'
@@ -12,6 +13,7 @@ const App = () => {
         </Route>
         <Route>{/*Admin Layout*/}</Route>
       </Routes>
+      <Analytics />
     </div>
   )
 }
