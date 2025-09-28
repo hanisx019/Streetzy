@@ -1,9 +1,6 @@
 import React from 'react'
 
 
-import MensCollection2 from "../../../assets/MensCollection2.jpg";
-import MensCollection from "../../../assets/MensCollection.jpg";
-
 const Hero = () => {
   return (
     <div>
@@ -13,8 +10,8 @@ const Hero = () => {
       </div>
   <div className="relative w-full flex justify-center items-center">
         <picture>
-          <source srcSet={MensCollection2} media="(min-width: 1280px)" />
-          <img className="w-[100vw] px-0 xl:px-0 select-none filter brightness-70" src={MensCollection} alt="Hero" draggable={false} />
+          <source srcSet="https://res.cloudinary.com/dfwq8rih1/image/upload/MensCollection2_mxldq1.jpg" media="(min-width: 1280px)" />
+          <img className="w-[100vw] px-0 xl:px-0 select-none filter brightness-70" src="https://res.cloudinary.com/dfwq8rih1/image/upload/MensCollection_ekbrgj.jpg" alt="Hero" draggable={false} />
         </picture>
   <div className="absolute inset-0 flex flex-col justify-end items-center pb-8 pointer-events-none z-20">
           <div className="relative mb-4 pointer-events-auto">

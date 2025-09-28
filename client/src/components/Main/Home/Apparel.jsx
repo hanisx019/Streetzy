@@ -1,6 +1,4 @@
 import React from 'react'
-import Nike from "../../../assets/Nike.avif"
-import g1 from "../../../assets/g1.jpg"
 import g2 from "../../../assets/g2.jpg"
 import { HiShoppingBag } from "react-icons/hi2";
 import { MdReplay } from "react-icons/md";
