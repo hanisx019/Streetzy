@@ -15,12 +15,12 @@ const Navbar = () => {
       <div className='flex justify-between px-[20px] md:px-[50px] lg:px-[100px] items-center p-2 select-none '>
         <h2 className='text-2xl font-extrabold  tracking-widest hover:text-shadow-black'><Link to="/" >Streetzy</Link></h2>
         <div className='hidden md:flex items-center  gap-5 text-[10px] md:text-sm font-semibold tracking-wide peer'>
-          <Link to="#"><p className='hover:text-gray-500 transition-all peer'>MEN</p></Link>
-          <Link to="#"><p className='hover:text-gray-500 transition-all'>WOMEN</p></Link>
-          <Link to="#"><p className='hover:text-gray-500 transition-all'>TOP WEAR</p></Link>
-          <Link to="#"><p className='hover:text-gray-500 transition-all'>BOTTOM WEAR</p></Link>
+          <Link to="#"><p className='hover:text-gray-500 transition-all peer pt-2'>MEN</p></Link>
+          <Link to="#"><p className='hover:text-gray-500 transition-all pt-2'>WOMEN</p></Link>
+          <Link to="#"><p className='hover:text-gray-500 transition-all pt-2'>TOP WEAR</p></Link>
+          <Link to="#"><p className='hover:text-gray-500 transition-all pt-2'>BOTTOM WEAR</p></Link>
         </div>
-        <div className='w-full bg-white h-[250px] absolute top-28 left-0 z-50 opacity-0 -translate-y-2 transition-all duration-150 peer-hover:opacity-100 peer-hover:translate-y-3  '>
+        <div className='w-full bg-white h-[250px] absolute top-24 left-0 z-50 opacity-0 -translate-y-2 transition-all duration-150 peer-hover:opacity-100 peer-hover:translate-y-3  '>
           <div className='flex justify-items-center justify-center mt-4 gap-10'>
               <div className='leading-8'>
                 <h2 className='text-[16px] font-semibold'>Featured</h2>
