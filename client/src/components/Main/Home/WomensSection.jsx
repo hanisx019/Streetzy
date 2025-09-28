@@ -1,12 +1,5 @@
 import React from 'react'
-import wm1 from "../../../assets/wm1.jpg"
-import wm2 from "../../../assets/wm2.jpg"
-import wm3 from "../../../assets/wm3.jpg"
-import wm4 from "../../../assets/wm4.jpg"
-import wm5 from "../../../assets/wm5.jpg"
-import wm6 from "../../../assets/wm6.jpg"
-import wm7 from "../../../assets/wm7.jpg"
-import wm8 from "../../../assets/wm8.jpg"
+
 
 const WomensSection = () => {
     const womens=[
@@ -15,7 +8,7 @@ const WomensSection = () => {
             name:"Wide-Leg Trousers",
             price:120,
             image:{
-                src:wm1,
+                url:"https://res.cloudinary.com/dfwq8rih1/image/upload/v1759067385/wm2_w915cw.jpg",
             },
         },
         {
@@ -23,7 +16,7 @@ const WomensSection = () => {
             name:"Wide-Leg Trousers",
             price:120,
             image:{
-                src:wm2,
+                url:"https://res.cloudinary.com/dfwq8rih1/image/upload/v1759067484/wm4_vrgwjf.jpg",
             },
         },
         {
@@ -31,7 +24,7 @@ const WomensSection = () => {
             name:"Wide-Leg Trousers",
             price:120,
             image:{
-                src:wm3,
+                url:"https://res.cloudinary.com/dfwq8rih1/image/upload/v1759067385/wm6_o2wjgt.jpg",
             },
         },
         {
@@ -39,7 +32,7 @@ const WomensSection = () => {
             name:"Wide-Leg Trousers",
             price:120,
             image:{
-                src:wm4,
+                url:"https://res.cloudinary.com/dfwq8rih1/image/upload/v1759067298/wm1_gktjcc.jpg",
             },
         },
         {
@@ -47,7 +40,7 @@ const WomensSection = () => {
             name:"Wide-Leg Trousers",
             price:120,
             image:{
-                src:wm5,
+                url:"https://res.cloudinary.com/dfwq8rih1/image/upload/v1759067359/wm8_b9phy9.jpg",
             },
         },
         {
@@ -55,7 +48,7 @@ const WomensSection = () => {
             name:"Wide-Leg Trousers",
             price:120,
             image:{
-                src:wm6,
+                url:"https://res.cloudinary.com/dfwq8rih1/image/upload/v1759067355/wm3_lrsm1p.jpg",
             },
         },
         {
@@ -63,7 +56,7 @@ const WomensSection = () => {
             name:"Wide-Leg Trousers",
             price:120,
             image:{
-                src:wm7,
+                url:"https://res.cloudinary.com/dfwq8rih1/image/upload/v1759067308/wm7_rezata.jpg",
             },
         },
         {
@@ -71,7 +64,7 @@ const WomensSection = () => {
             name:"Wide-Leg Trousers",
             price:120,
             image:{
-                src:wm8,
+                url:"https://res.cloudinary.com/dfwq8rih1/image/upload/v1759067528/wm5_z5wwl5.jpg",
             },
         },
     ]
@@ -84,7 +77,7 @@ const WomensSection = () => {
             <div className='flex flex-row gap-12 px-12 w-full mt-10'>
                 {womens.slice(0, 4).map((item) => (
                     <div className='w-1/4 ' key={item._id}>
-                        <img className='w-full h-100 object-cover rounded-3xl' src={item.image.src}/>
+                        <img className='w-full h-100 object-cover rounded-3xl' src={item.image.url} loading="eager" width="300" height="400"/>
                         <h3 className='px-3 pt-2 font-semibold'>{item.name}</h3>
                         <h4 className='px-3 pt-1 font-semibold text-neutral-600'>${item.price}</h4>
                     </div>
@@ -93,7 +86,7 @@ const WomensSection = () => {
             <div className='flex flex-row gap-12 px-12 w-full'>
                 {womens.slice(4, 8).map((item) => (
                     <div className='w-1/4' key={item._id}>
-                        <img className='w-full h-100 object-cover rounded-3xl' src={item.image.src}/>
+                        <img className='w-full h-100 object-cover rounded-3xl' src={item.image.url} loading="eager" width="300" height="400"/>
                         <h3 className='px-3 pt-2 font-semibold'>{item.name}</h3>
                         <h4 className='px-3 pt-1 font-semibold text-neutral-600'>${item.price}</h4>
                     </div>

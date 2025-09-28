@@ -73,7 +73,7 @@ const CartProducts = () => {
     <div className=''>
         {products.map((products,index)=>(
         <div key={index} className='flex gap-4 py-2 w-full border-b-1 border-gray-400'>
-          <img className='h-20 w-[25%] md:h-22 md:w-[22%] bg-black text-[20px] ml-5 object-cover' src={products.image} />
+          <img className='h-20 w-[25%] md:h-22 md:w-[22%] bg-black text-[20px] ml-5 object-cover' src={products.image} loading="lazy" width="80" height="80" />
           <div className='flex w-3/4 justify-between items-center gap-4'>
             <div className='w-[70%]'>
               <div >

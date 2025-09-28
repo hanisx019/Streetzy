@@ -1,5 +1,4 @@
 import React from 'react'
-import g2 from "../../../assets/g2.jpg"
 import { HiShoppingBag } from "react-icons/hi2";
 import { MdReplay } from "react-icons/md";
 import { CiCreditCard1 } from "react-icons/ci";
@@ -14,7 +13,7 @@ const Apparel = () => {
                 <p className='text-sm'>Dicover high qualtiy, comfortable clothing that effortlessly blends fashion and<br/> function. Designed to make you look and feel great everyday</p>
                 <button className='text-black bg-white py-2 px-6 font-semibold rounded-md'>Shop Now</button>
             </div>
-            <img className='w-1/2 object-cover rounded-r-4xl' src={g2}/>
+            <img className='w-1/2 object-cover rounded-r-4xl' src="https://res.cloudinary.com/dfwq8rih1/image/upload/v1759068669/g2_jfz83f.jpg"/>
         </div>
 
         <div className='mt-30 flex justify-around items-center mb-16'>

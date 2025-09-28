@@ -63,8 +63,6 @@ function Arrivals() {
             src={Arrivals[currentIndex].images[0].url}
             loading="eager"
           />
-          <h2 className="absolute inset-0 mt-[120%] text-white w-full px-4">{Arrivals[currentIndex].name}</h2>
-          <h3 className="absolute inset-0 mt-[130%] text-white px-4">{Arrivals[currentIndex].price}</h3>
         </div>
         <button
           onClick={() => setCurrentIndex(currentIndex === Arrivals.length - 1 ? 0 : currentIndex + 1)}
