@@ -1,5 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Mansalva&family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
+
+/* Default font for the app */
+#root {
+  font-family: "Outfit", sans-serif;  
+}
+
+/*  Custom font for specific elements  */
+.Tzfont{
+  font-family: "Bitcount Grid Double", system-ui;
+}
+
+
 /* Hide scrollbar utility */
 .scrollbar-hide {
   scrollbar-width: none; /* Firefox */
@@ -18,13 +29,9 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
-#root {
-  font-family: "Outfit", sans-serif;
-}
 
-.Tzfont{
-  font-family: "Bitcount Grid Double", system-ui;
-}
+
+
 
 .searchbar-width-animate {
   width: 0;
@@ -43,9 +50,8 @@
   animation: searchbarFadeIn 0.4s forwards;
 }
 
-.funky{
-  font-family: 'Mansalva', cursive;
-}
+
+
 
 @keyframes searchbarFadeIn {
   to {

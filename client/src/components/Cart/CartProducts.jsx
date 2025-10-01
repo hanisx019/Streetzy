@@ -2,30 +2,30 @@ import React from 'react'
 
 const CartProducts = () => {
 
-    const products=[
-        {
-            id:1,
-            name:"T-shirt",
-            size:"M",
-            color:"Black",
-            price:20,
-            image:"https://picsum.photos/200?random=1",
-        },
-        {
-            id:2,
-            name:"Pant",
-            size:"L",
-            color:"yellow",
-            price:3000,
-            image:"https://picsum.photos/200?random=2",
-        },
-        {
-            id:3,
-            name:"Skirt",
-            size:"M",
-            color:"Blue",
-            price:340,
-            image:"https://picsum.photos/200?random=3",
+const products=[
+  {
+    id:1,
+    name:"T-shirt",
+    size:"M",
+    color:"Black",
+    price:20,
+    image:"https://picsum.photos/200?random=1",
+  },
+  {
+    id:2,
+    name:"Pant",
+    size:"L",
+    color:"yellow",
+    price:3000,
+    image:"https://picsum.photos/200?random=2",
+  },
+  {
+    id:3,
+    name:"Skirt",
+    size:"M",
+    color:"Blue",
+    price:340,
+    image:"https://picsum.photos/200?random=3",
         },
         {
             id:4,

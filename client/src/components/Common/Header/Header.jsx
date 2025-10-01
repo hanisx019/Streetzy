@@ -1,16 +1,17 @@
 import React from 'react'
-import Topbar from './Topbar/Topbar'
-import Navbar from './Navbar/Navbar'
+import Topbar from './HeaderComponents/Topbar'
+import Navbar from './HeaderComponents/Navbar'
 
 const Header = () => {
   return (
-    <div>
-        {/*Topbar*/}
+    <header>
+        {/* Topbar */}
         <Topbar/>
-        {/*Navbar*/}
+
+        {/* Navbar */}
         <Navbar/>
-        <hr className='mt-2 text-gray-200 '/>
-    </div>
+        
+    </header>
   )
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { IoMdClose } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 const MobileMenuBar = ({openMenuBar,setOpenMenuBar}) => {
 
@@ -9,12 +10,12 @@ const MobileMenuBar = ({openMenuBar,setOpenMenuBar}) => {
             <h2 className='mt-[50px] font-bold text-[22px]'>Menu</h2>
             <IoMdClose onClick={()=>{setOpenMenuBar(false)}} className='absolute top-0 right-0 size-8 mr-3 mt-3'/>
         </div>
-        <div className='mt-4 leading-10 font-medium hover:text-gray-500 transition-all  cursor-pointer' >
+        <div className='mt-4 leading-10 font-sans ' >
             <ul>
-                <li>Men</li>
-                <li>Women</li>
-                <li>Top Wear</li>
-                <li>Bottom Wear</li>
+                <Link to="#"><li className='hover:text-gray-500 transition-all  cursor-pointer'>Men</li></Link>
+                <Link to="#"><li className='hover:text-gray-500 transition-all  cursor-pointer'>Women</li></Link>
+                <Link to="#"><li className='hover:text-gray-500 transition-all  cursor-pointer'>Top Wear</li></Link>
+                <Link to="#"><li className='hover:text-gray-500 transition-all  cursor-pointer'>Bottom Wear</li></Link>
             </ul>
         </div>
     </div>

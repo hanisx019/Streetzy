@@ -26,26 +26,15 @@ const SearchBar = () => {
 
   return (
     <div>
-      <button
-        onClick={handleOpen}
-        style={{ visibility: "visible" }}
-      >
+      <button onClick={handleOpen} style={{ visibility: "visible" }}>
         <HiMagnifyingGlass className="size-5 mt-[6px] cursor-pointer hover:text-gray-500 transition-all" />
       </button>
       {showBar && (
-        <form
-          onSubmit={inputData}
-          className={`searchbar-width-animate ${isOpen ? "open" : ""}`}
-        >
+        <form onSubmit={inputData} className={`searchbar-width-animate ${isOpen ? "open" : ""}`}>
           <div className="absolute top-0 left-0 w-full h-[100px] bg-white p-4 flex justify-center items-center ">
-            <div className="relative w-[50%] ">
-              <input
-                type="text"
-                onChange={(e) => setSearchTerm(e.target.value)}
-                value={searchTerm}
-                placeholder="Search"
-                className="bg-gray-200 p-2 px-4 w-full focus:outline-none rounded-[5px]"
-              />
+            <div className="relative w-[50%] justify-center ">
+              <input type="text"  onChange={(e) => setSearchTerm(e.target.value)} value={searchTerm} placeholder="Search" className="bg-gray-200 p-2 px-4 w-full focus:outline-none
+               rounded-[5px]"/>
               <button
                 type="submit"
                 className="absolute right-2 top-1/2 -translate-y-1/2 pl-2  bg-gray-200"
